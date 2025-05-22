@@ -19,17 +19,24 @@
 
 ## 🧠 Model Pipeline
 
-```mermaid
-graph LR
-A[🗂️ Load Dataset] --> B[🧹 Clean & Preprocess Text]
-B --> C[🧾 TF-IDF Vectorization]
-C --> D[📊 Train/Test Split]
-D --> E[🧠 Train Classifier (PAC)]
-E --> F[📈 Evaluate Model]
-F --> G[✅ Predict New Samples]
-```
+1️⃣ Load Dataset
+     ↓
+2️⃣ Data Cleaning & Preprocessing
+     - Remove nulls and unwanted characters
+     - Convert to lowercase
+     - Tokenization and stopword removal
+     ↓
+3️⃣ Feature Extraction using TF-IDF Vectorizer
+     ↓
+4️⃣ Train/Test Split
+     ↓
+5️⃣ Model Training using PassiveAggressiveClassifier
+     ↓
+6️⃣ Model Evaluation
+     - Accuracy Score
+     - Confusion Matrix
+     - Classification Report
 
----
 
 ## 📊 Dataset Info
 
